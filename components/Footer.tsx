@@ -1,8 +1,4 @@
 import { client } from "@/lib/microcms";
-import Link from "next/link";
-import Image from "next/image";
-import Hero from "@/components/Hero";
-import About from "@/components/AboutLead";
 
 function Header() {
   return <h1>会社名</h1>;
@@ -14,9 +10,13 @@ export default async function Home() {
   });
 
   return (
-    <main>
-      <Hero />
-      <About />
+    <main className="hero">
+      <Header />
+
+      <p>トップページ</p>
+
+      <h2>お知らせ</h2>
+
       {data.contents.map((item: any) => (
         <article key={item.id}>
           <h3>{item.title}</h3>

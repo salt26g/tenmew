@@ -1,0 +1,12 @@
+.about .img {
+  position: relative;
+  width: 95%;
+  height: 50vh;
+  left: 0;
+  top: 0;
+}
+.txtBox {
+  background-color: #f4f4f4;
+  padding: 23vh 5% 30px;
+  margin-top: -25vh;
+  }
