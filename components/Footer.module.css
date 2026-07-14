@@ -1,0 +1,49 @@
+.footer {
+  background-color: #f4f4f4;
+  padding: 50px 10% 40px;
+}
+.fot_log {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  left: 0;
+  top: 0;
+  margin-bottom: 30px;
+}
+.fot_nav li {
+  margin-bottom: 20px;
+}
+.fot_nav_ttl {
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}
+.fot_nav_ttl .ja {
+  display: block;
+  font-size: 14px;
+  color: #1f592a;
+  margin-bottom: 5px;
+}
+.fot_nav_ttl .en {
+  display: block;
+  font-size: 25px;
+}
+.fot_nav_lnk {
+  margin-bottom: 50px;
+}
+.fot_nav_lnk li {
+  border-right: dotted 2px #333;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline;
+}
+.fot_nav_lnk li:last-child {
+  border-right: none;
+}
+.fot_txt_lnk, .fot_txt {
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: block;
+}

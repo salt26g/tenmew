@@ -1,9 +1,6 @@
 import { client } from "@/lib/microcms";
 import Link from "next/link";
 import Image from "next/image";
-import Hero from "@/components/Hero";
-import About from "@/components/AboutLead";
-import Service from "@/components/ServiceLead";
 import Contact from "@/components/ContactLead";
 
 function Header() {
@@ -17,9 +14,6 @@ export default async function Home() {
 
   return (
     <main>
-      <Hero />
-      <About />
-      <Service />
       <Contact />
     </main>
   );

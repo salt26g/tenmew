@@ -1,24 +1,43 @@
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 14px 50px;
   font-size: 16px;
-  font-weight: bold;
   text-decoration: none;
   border: none;
   border-radius: 999px;
   cursor: pointer;
   transition: all 0.3s;
+  position: relative;
 }
-
-.primary {
-  background-color: #67ae3e;
+.button:before {
+  position: absolute;
+  content: ">";
+  color: #333;
+  font-size: 20px;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 16px;
+}
+.button:hover:before {
   color: #fff;
 }
 
+.primary {
+  border: solid 1px #333;
+}
+
 .primary:hover {
-  background-color: #1f592a;
+  background-color: #67ae3e;
+  color: #fff;
+  border: solid 1px #67ae3e;
 }
 
 .secondary {

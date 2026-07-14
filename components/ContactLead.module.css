@@ -1,0 +1,57 @@
+.contact {
+  background-image: url("/img/basic/top_bg01.webp");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  padding: 50px 5%;
+}
+.contactTtl {
+  white-space: nowrap;
+  font-size: clamp(70px, 8vw, 100px); 
+  font-weight: bold;
+  display: flex;
+  justify-content:center;
+  align-items:flex-start;
+  color: #fff;
+  border-bottom: solid 5px #fff;
+  margin-bottom: 30px;
+}
+.contactTxt {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.contactBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactBtn a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  color: #fff;
+  border: solid 1px#fff;
+}
+.contactBtn a+a{
+  margin-left: 5%;
+}
+.contactBtn a:before {
+  position: absolute;
+  content: ">";
+  color: #fff;
+  font-size: 20px;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 16px;
+}

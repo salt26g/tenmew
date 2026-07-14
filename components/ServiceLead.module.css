@@ -1,14 +1,13 @@
-.about .img {
+.service .img {
   position: relative;
   width: 95%;
   height: 50vh;
-  left: 0;
+  right: 0;
   top: 0;
+  margin: 75px 0 0 5%;
 }
 .txtBox {
-  background-color: #f4f4f4;
-  padding: 23vh 5% 75px;
-  margin-top: -25vh;
+  padding: 75px 5%;
 }
 .txtBox h2 {
   margin-bottom: 30px;

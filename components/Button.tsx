@@ -23,15 +23,15 @@ export default function Button({
   // href があればリンクとして、なければボタンとして表示する
   if (href) {
     return (
-      <Link href={href} className={className}>
+      <div className={styles.btn1}><Link href={href} className={className}>
         {children}
-      </Link>
+      </Link></div>
     );
   }
 
   return (
-    <button type={type} onClick={onClick} className={className}>
+    <div className={styles.btn2}><button type={type} onClick={onClick} className={className}>
       {children}
-    </button>
+    </button></div>
   );
 }
