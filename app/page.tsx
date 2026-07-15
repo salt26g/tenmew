@@ -1,6 +1,4 @@
 import { client } from "@/lib/microcms";
-import Link from "next/link";
-import Image from "next/image";
 import Hero from "@/components/Hero";
 import About from "@/components/AboutLead";
 import Service from "@/components/ServiceLead";

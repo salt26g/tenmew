@@ -1,26 +1,26 @@
 .service .img {
   position: relative;
   width: 95%;
-  height: 50vh;
+  height: 65vh;
   right: 0;
   top: 0;
   margin: 75px 0 0 5%;
 }
 .txtBox {
-  padding: 75px 5%;
+  padding: 75px 3%;
 }
 .txtBox h2 {
   margin-bottom: 30px;
 }
 .txtBox h2 .en {
-  font-size: 35px;
+  font-size: 8vw;
   font-weight: bold;
   border-bottom: solid 5px;
   color: #1f592a;
 }
 .txtBox h2 .ja {
   font-weight: bold;
-  padding: 0 0 9px 1rem;
+  padding: 0 0 8px 1rem;
   position: relative;
 }
 .txtBox .ja:before {

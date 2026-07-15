@@ -1,0 +1,125 @@
+.bg_grn {
+  background-color: #1f592a;
+}
+.bg_gry {
+  background-color: #f4f4f4;
+}
+.inner {
+  padding: 10vh 3%;
+}
+.section_ttl {
+  margin-bottom: 30px;
+}
+.section_ttl .en {
+  font-size: 8vw;
+  font-weight: bold;
+  border-bottom: solid 5px;
+  color: #1f592a;
+}
+.section_ttl .ja {
+  font-weight: bold;
+  padding: 0 0 8px 1rem;
+  position: relative;
+  color: #333;
+}
+.section_ttl .ja:before {
+  content:"";
+  position:absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.txt_box {
+  font-size: 15px;
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+.txt_box .big {
+  font-size: 4.8vw;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
+}
+.txt_box .bold {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.section_sub_ttl {
+  color: #1f592a;
+  font-weight: bold;
+  font-size: 4.5vw;
+  padding: 0.4rem 0 0.4rem 0.8rem;
+  border-left: solid 0.4rem #1f592a;
+  margin-bottom: 25px;
+}
+.bg_wht_box {
+  background-color: #fff;
+  box-shadow: 0 5px 10px #e3e3e3;
+  padding: 3rem 3% 0;
+  margin: 3rem 0 0;
+}
+.quote {
+  color: #67ae3e;
+  font-style: italic;
+  display: block;
+  padding-bottom: 3rem;
+  font-size: 3.5vw;
+}
+.quote .right {
+  text-align: right;
+  display: block;
+}
+.quote .name {
+  color: #717171;
+  display: block;
+  text-align: right;
+}
+.mission .tra_box {
+  background-color: #ffffff7a;
+  box-shadow: 0 5px 10px #e3e3e3;
+  padding: 10vh 6% 2vh 3%;
+  margin: -14vh 0 0 3%;
+}
+.mission .txt_box .big {
+  color: #67ae3e;
+  font-size: 7vw;
+}
+.company_info li {
+  border-bottom: solid 1px #7a7a7a;
+  margin-bottom: 1.5rem;
+}
+.company_info li span {
+  display: block;
+  font-weight: bold;
+  color: #1f592a;
+  margin-bottom: 1rem;
+}
+.company_info li p {
+  margin-bottom: 1.5rem;
+}
+.img {
+  position: relative;
+  width: 95%;
+  height: 60vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.bg_grn .section_ttl .en {
+  color: #67ae3e;
+}
+.bg_grn .section_ttl .ja {
+  color: #fff;
+}
+.bg_grn .section_ttl .ja:before {
+  background-color: #fff;
+}
+.bg_grn .txt_box {
+  color: #fff;
+}
+.AboutPage section {
+  scroll-margin-top: 13vh;
+}

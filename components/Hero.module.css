@@ -16,7 +16,8 @@
   flex-direction: column;
   writing-mode: vertical-rl;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 3vh;
+  letter-spacing: 0.1rem;
 }
 .gr {
   color: #1f592a;
@@ -24,11 +25,11 @@
 .lead p {
   background: #fff;
   padding: 10px;
-  border-radius: 10px;
-  box-shadow: 8px 8px 0 0 #67ae3e;
+  border-radius: 3px;
+  box-shadow: 3px 3px 0 3px #67ae3e;
 }
 .lead p:nth-child(2) {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .hero h1 {
   position: absolute;

@@ -1,27 +1,27 @@
 .about .img {
   position: relative;
   width: 95%;
-  height: 50vh;
+  height: 60vh;
   left: 0;
   top: 0;
 }
 .txtBox {
   background-color: #f4f4f4;
-  padding: 23vh 5% 75px;
-  margin-top: -25vh;
+  padding: 23vh 3% 75px;
+  margin-top: -21vh;
 }
 .txtBox h2 {
   margin-bottom: 30px;
 }
 .txtBox h2 .en {
-  font-size: 35px;
+  font-size: 8vw;
   font-weight: bold;
   border-bottom: solid 5px;
   color: #1f592a;
 }
 .txtBox h2 .ja {
   font-weight: bold;
-  padding: 0 0 9px 1rem;
+  padding: 0 0 8px 1rem;
   position: relative;
 }
 .txtBox .ja:before {
@@ -39,7 +39,7 @@
   margin-bottom: 25px;
 }
 .txtBox p .big {
-  font-size: 22px;
+  font-size: 4.8vw;
   font-weight: bold;
   display: block;
   margin-bottom: 25px;

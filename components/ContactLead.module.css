@@ -32,8 +32,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 30px;
-  font-size: 16px;
+  padding: 14px 9vw;
+  font-size: 3.5vw;
   text-decoration: none;
   border-radius: 999px;
   cursor: pointer;
@@ -43,7 +43,7 @@
   border: solid 1px#fff;
 }
 .contactBtn a+a{
-  margin-left: 5%;
+  margin-left: 5vw;
 }
 .contactBtn a:before {
   position: absolute;

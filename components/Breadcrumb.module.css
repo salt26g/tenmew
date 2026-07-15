@@ -1,0 +1,39 @@
+.breadcrumb {
+  width: 100%;
+  padding: 15px 5%;
+  margin-top: 12vh;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  font-size: 13px;
+  color: #666;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item:not(:last-child)::after {
+  content: "/";
+  margin: 0 8px;
+  color: #999;
+}
+
+.item a {
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.item a:hover {
+  color: #1f592a;
+}
+
+.current {
+  color: #1f592a;
+  font-weight: bold;
+}

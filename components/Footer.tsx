@@ -12,9 +12,9 @@ export default function Footer() {
         <li>
           <div className={styles.fot_nav_ttl}><Link href="/about"><span className={styles.ja}>私たちについて</span><span className={styles.en}>ABOUT</span></Link></div>
           <ul className={styles.fot_nav_lnk}>
-            <li><Link href="/about">私たちの想い</Link></li>
-            <li><Link href="/about">ミッション</Link></li>
-            <li><Link href="/about">会社概要</Link></li>
+            <li><Link href="/about#vision">私たちの想い</Link></li>
+            <li><Link href="/about#mission">ミッション</Link></li>
+            <li><Link href="/about#company">会社概要</Link></li>
           </ul>
         </li>
         <li>

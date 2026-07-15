@@ -1,6 +1,7 @@
 .footer {
   background-color: #f4f4f4;
-  padding: 50px 10% 40px;
+  padding: 50px 6% 40px;
+  letter-spacing: 0.1rem;
 }
 .fot_log {
   position: relative;
