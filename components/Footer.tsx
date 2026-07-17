@@ -20,15 +20,15 @@ export default function Footer() {
         <li>
           <div className={styles.fot_nav_ttl}><Link href="/about"><span className={styles.ja}>サービス</span><span className={styles.en}>SERVICE</span></Link></div>
           <ul className={styles.fot_nav_lnk}>
-            <li><Link href="/service">キャリア支援</Link></li>
-            <li><Link href="/service">選ばれる理由</Link></li>
+            <li><Link href="/service#support">キャリア支援</Link></li>
+            <li><Link href="/service#reasons">選ばれる理由</Link></li>
           </ul>
         </li>
         <li>
           <div className={styles.fot_nav_ttl}><Link href="/about"><span className={styles.ja}>お問い合わせ・採用情報</span><span className={styles.en}>CONTACT・RECRUIT</span></Link></div>
           <ul className={styles.fot_nav_lnk}>
-            <li><Link href="/contact">お問い合わせ</Link></li>
-            <li><Link href="/contact">採用情報</Link></li>
+            <li><Link href="/contact#contact">お問い合わせ</Link></li>
+            <li><Link href="/contact#recruit">採用情報</Link></li>
           </ul>
         </li>
       </ul>

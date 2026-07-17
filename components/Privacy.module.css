@@ -1,0 +1,62 @@
+.hero .hero_lead {
+  margin: 5vh 6%;
+}
+.hero h1 {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.hero h1 .en {
+  font-size: 10vw;
+  color: #1f592a;
+  display: inline-block;
+  padding-bottom: 1.5vh;
+  margin-bottom: 3vh;
+  position: relative;
+}
+.hero h1 .en:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #1f592a;
+}
+.hero h1 .ja {
+  font-size: 5vw;
+  display: block;
+  margin-bottom: 3vh;
+}
+.inner {
+  padding: 5vh 3%;
+}
+.privacy_ttl {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f592a;
+  margin-bottom: 1.5rem;
+}
+.privacy_ol p, .privacy_ol li ul {
+  margin-bottom: 5rem;
+}
+.privacy_ol p+ul{
+  margin-top: -3.5rem;
+}
+.privacy_ol li ul li {
+  position: relative;
+  margin-left: 2rem;
+  display: block;
+}
+.privacy_ol li ul li:before {
+  content: "・";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0;
+  left: -2rem;
+}
+.date {
+  display: block;
+  text-align: right;
+  margin-bottom: 10vh;
+}

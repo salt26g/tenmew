@@ -1,0 +1,153 @@
+.bg_yelgrn {
+  background-color: #eaf5e4;
+}
+.inner {
+  padding: 10vh 3%;
+}
+.section_ttl {
+  margin-bottom: 30px;
+}
+.section_ttl .en {
+  font-size: 8vw;
+  font-weight: bold;
+  border-bottom: solid 5px;
+  color: #1f592a;
+}
+.section_ttl .ja {
+  font-weight: bold;
+  padding: 0 0 8px 1rem;
+  position: relative;
+  color: #333;
+}
+.section_ttl .ja:before {
+  content:"";
+  position:absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.txt_box {
+  font-size: 15px;
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+.txt_box .big {
+  font-size: 4.8vw;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
+}
+.txt_box .bold {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.section_sub_ttl {
+  color: #1f592a;
+  font-weight: bold;
+  font-size: 4.5vw;
+  padding: 0.4rem 0 0.4rem 0.8rem;
+  border-left: solid 0.4rem #1f592a;
+  margin-bottom: 25px;
+}
+.support {
+  position: relative;
+}
+.img {
+  position: relative;
+}
+.support .img {
+  position: absolute;
+  width: 95%;
+  height: 65vh;
+  right: 0;
+  bottom: -10vh;
+  margin-left: 5%;
+}
+.support .bg_yelgrn {
+  padding-bottom: 57vh;
+  margin-bottom: 6vh;
+}
+.section_sub_ttl {
+  color: #1f592a;
+  font-weight: bold;
+  font-size: 5.5vw;
+  padding: 0.4rem 0 0.4rem 0.8rem;
+  border-left: solid 0.4rem #1f592a;
+  margin-bottom: 25px;
+}
+.section_sub_ttl .big {
+  font-size: 8vw;
+}
+.section_sub_ttl .yelgrn {
+  color: #67ae3e;
+}
+.reasons_ol .reasons_ttl {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 25px;
+}
+.reasons_ol .reasons_ttl .nb {
+  display: block;
+  float: left;
+  width: 15%;
+  position: relative;
+}
+.reasons_ol .reasons_ttl .nb::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #67ae3e;
+  top: 0;
+  left: 0;
+  font-size: 9vw;
+  font-weight: lighter;
+  font-family: "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
+  display: block;
+  margin-top: -3%;
+}
+.reasons_ol li:first-child .reasons_ttl .nb::before {
+  content: "01";
+}
+.reasons_ol li:nth-child(2) .reasons_ttl .nb::before {
+  content: "02";
+}
+.reasons_ol li:nth-child(3) .reasons_ttl .nb::before {
+  content: "03";
+}
+.reasons_ol .reasons_ttl .txt {
+  display: block;
+  float: right;
+  width: 85%;
+  font-weight: bold;
+  color: #1f592a;
+  font-size: 4.4vw;
+  padding-left: 3%;
+  margin-left: 3%;
+  border-left: solid 1.5px #a5a5a5;
+}
+.reasons_ol li .img {
+  margin-bottom: 25px;
+}
+.reasons_ol li:first-child .img {
+  width: 100%;
+  height: 32vh;
+}
+.reasons_ol li:nth-child(2) .img {
+  width: 100%;
+  height: 37vh;
+}
+.reasons_ol li:nth-child(3) .img {
+  width: 100%;
+  height: 30vh;
+}
+.reasons_ol p {
+  padding-bottom: 50px;
+  border-bottom: dotted 2px #bdbdbd;
+  margin-bottom: 50px;
+}
+.ServicePage section {
+  scroll-margin-top: 13vh;
+}

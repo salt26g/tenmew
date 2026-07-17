@@ -1,4 +1,4 @@
-.btn1 {
+.btn1, .btn2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,6 @@
 .primary {
   border: solid 1px #333;
 }
-
 .primary:hover {
   background-color: #67ae3e;
   color: #fff;

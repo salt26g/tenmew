@@ -4,10 +4,6 @@ import About from "@/components/AboutLead";
 import Service from "@/components/ServiceLead";
 import Contact from "@/components/ContactLead";
 
-function Header() {
-  return <h1>会社名</h1>;
-}
-
 export default async function Home() {
   const data = await client.get({
     endpoint: "news",

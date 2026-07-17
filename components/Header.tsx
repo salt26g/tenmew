@@ -58,10 +58,10 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/service" onClick={closeMenu}>キャリア支援</Link>
+              <Link href="/service#support" onClick={closeMenu}>キャリア支援</Link>
             </li>
             <li>
-              <Link href="/service" onClick={closeMenu}>選ばれる理由</Link>
+              <Link href="/service#reasons" onClick={closeMenu}>選ばれる理由</Link>
             </li>
           </ul>
           <ul className="nav_lIst">
@@ -71,10 +71,10 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/contact" onClick={closeMenu}>お問い合わせ</Link>
+              <Link href="/contact#contact" onClick={closeMenu}>お問い合わせ</Link>
             </li>
             <li>
-              <Link href="/contact" onClick={closeMenu}>採用情報</Link>
+              <Link href="/contact#recruit" onClick={closeMenu}>採用情報</Link>
             </li>
           </ul>
         </nav>
