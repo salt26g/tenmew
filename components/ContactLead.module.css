@@ -47,11 +47,13 @@
 }
 .contactBtn a:before {
   position: absolute;
-  content: ">";
-  color: #fff;
-  font-size: 20px;
+  content: "";
+  background-image: url(../public/img/basic/btn_icon_wh.webp);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 1em;
   width: 16px;
-  height: 16px;
+  height: 1em;
   right: 10px;
-  top: 16px;
+  top: 18px;
 }

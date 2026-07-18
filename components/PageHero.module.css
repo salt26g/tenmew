@@ -37,25 +37,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5vh 0;
+  margin: 5vh 0 10vh;
 }
-.hero_anc li {
+.hero_anc li+li {
+  margin-left: 2vw;
+}
+.hero_anc li a {
   background-color: #f4f4f4;
   padding: 3vw 6vw 2rem;
   font-size: 3.5vw;
   border-radius: 999px;
   position: relative;
 }
-.hero_anc li+li {
-  margin-left: 2vw;
-}
-.hero_anc li:before {
+.hero_anc li a:before {
   position: absolute;
-  content: ">";
-  color: #6a6a6a;
-  font-size: 20px;
+  content: "";
+  background-image: url(../public/img/basic/btn_icon_bk.webp);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 1em;
   width: 16px;
-  height: 16px;
+  height: 1em;
   right: 41%;
   bottom: 0.5rem;
   transform: rotate(90deg);

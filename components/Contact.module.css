@@ -61,8 +61,10 @@
   text-align: right;
   margin-bottom: 2rem;
 }
-.required_note .required_mark {
+.required_mark {
   font-size: 15px;
+  margin: 0 0.3em;
+  color: #67ae3e;
 }
 .contact_form .form_group label, .form_label {
   font-weight: bold;
@@ -92,7 +94,7 @@
 .contact_form .form_group .radio_item input {
   width: auto;
   margin-right: 0.5rem;
-  transform: scale(1.5);
+  transform: scale(1);
   accent-color: #1f592a;
 }
 .form_group .message_box {
@@ -107,7 +109,7 @@
   width: auto;
   margin: 0 0.5rem 0 0;
   accent-color: #1f592a;
-  transform: scale(1.5);
+  transform: scale(1);
 }
 .form_group label.privacy_policy {
   display: block;
@@ -133,7 +135,7 @@
   color: #fff;
 }
 .ContactPage section {
-  scroll-margin-top: 13vh;
+  scroll-margin-top: 11vh;
 }
 .btn {
   display: flex;
@@ -156,9 +158,11 @@
 }
 .btn a:before {
   position: absolute;
-  content: ">";
-  color: #fff;
-  font-size: 20px;
+  content: "";
+  background-image: url(../public/img/basic/btn_icon_wh.webp);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 1em;
   width: 16px;
   height: 16px;
   right: 10px;

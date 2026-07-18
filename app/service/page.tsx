@@ -1,10 +1,41 @@
+import type { Metadata } from "next";
 import { client } from "@/lib/microcms";
-import Link from "next/link";
 import Image from "next/image";
 import styles from "@/components/Service.module.css";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageHero from "@/components/PageHero";
 import Contact from "@/components/ContactLead";
+
+export const metadata: Metadata = {
+  title:
+    "サービス｜株式会社テンミュー",
+
+  description:
+    "一人ひとりの可能性を引き出し、自分らしい未来を支えるキャリア支援と、テンミューが選ばれる理由をご紹介します。",
+
+  alternates: {
+    canonical: "https://tenmew.jp/service",
+  },
+
+  openGraph: {
+    title:
+      "サービス｜株式会社テンミュー",
+
+    description:
+      "一人ひとりの可能性を引き出し、自分らしい未来を支えるキャリア支援と、テンミューが選ばれる理由をご紹介します。",
+
+    url: "https://tenmew.jp/service",
+
+    images: [
+      {
+        url: "/img/service/ogp_service.jpg",
+        width: 1200,
+        height: 630,
+        alt: "サービス｜株式会社テンミュー",
+      },
+    ],
+  },
+};
 
 export default async function Home() {
   const data = await client.get({

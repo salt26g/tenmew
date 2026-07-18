@@ -1,8 +1,41 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import styles from "@/components/About.module.css";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageHero from "@/components/PageHero";
 import Contact from "@/components/ContactLead";
+
+export const metadata: Metadata = {
+  title:
+    "私たちについて｜株式会社テンミュー",
+
+  description:
+    "「何それ面白そう。」があふれる社会を目指す、テンミューの想いやミッション、会社概要をご紹介します。",
+
+  alternates: {
+    canonical: "https://tenmew.jp/about",
+  },
+
+  openGraph: {
+    title:
+      "私たちについて｜株式会社テンミュー",
+
+    description:
+      "「何それ面白そう。」があふれる社会を目指す、テンミューの想いやミッション、会社概要をご紹介します。",
+
+    url: "https://tenmew.jp/about",
+
+    images: [
+      {
+        url: "/img/about/ogp_about.jpg",
+        width: 1200,
+        height: 630,
+        alt: "私たちについて｜株式会社テンミュー",
+      },
+    ],
+  },
+};
 
 export default function AboutPage() {
   return (

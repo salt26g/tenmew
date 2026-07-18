@@ -1,9 +1,41 @@
+import type { Metadata } from "next";
 import { client } from "@/lib/microcms";
 import Link from "next/link";
 import styles from "@/components/Contact.module.css";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageHero from "@/components/PageHero";
 import Button from "@/components/Button";
+
+export const metadata: Metadata = {
+  title:
+    "お問い合わせ・採用情報｜株式会社テンミュー",
+
+  description:
+    "テンミューのサービスに関するご相談や採用に関するお問い合わせはこちら。お気軽にご連絡ください。",
+
+  alternates: {
+    canonical: "https://tenmew.jp/contact",
+  },
+
+  openGraph: {
+    title:
+      "お問い合わせ・採用情報｜株式会社テンミュー",
+
+    description:
+      "テンミューのサービスに関するご相談や採用に関するお問い合わせはこちら。お気軽にご連絡ください。",
+
+    url: "https://tenmew.jp/contact",
+
+    images: [
+      {
+        url: "/img/contact/ogp_contact.jpg",
+        width: 1200,
+        height: 630,
+        alt: "お問い合わせ・採用情報｜株式会社テンミュー",
+      },
+    ],
+  },
+};
 
 export default async function Home() {
   const data = await client.get({

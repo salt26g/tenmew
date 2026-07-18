@@ -16,21 +16,30 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tenmew.jp"),
+
   title: {
-    default: "株式会社テンミュー｜人生に寄り添うキャリア・転職支援サービス",
+    default: "株式会社テンミュー",
     template: "%s｜株式会社テンミュー",
   },
-  description: "テンミューは、「何それ面白そう。」があふれる社会を目指し、一人ひとりの可能性を行動へつなげるキャリア支援会社です。",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  alternates: {
+    canonical: "https://tenmew.jp",
+  },
+
   icons: {
     icon: "/img/basic/favicon.png",
     apple: "/img/basic/apple-touch-icon.jpg",
   },
+
   openGraph: {
     locale: "ja_JP",
-    title: "株式会社テンミュー｜人生に寄り添うキャリア・転職支援サービス",
-    description: "テンミューは、「何それ面白そう。」があふれる社会を目指し、一人ひとりの可能性を行動へつなげるキャリア支援会社です。",
-    url: "https://tenmew.jp",
     siteName: "株式会社テンミュー",
+    type: "website",
     images: [
       {
         url: "/img/basic/ogp.jpg",
@@ -39,7 +48,6 @@ export const metadata: Metadata = {
         alt: "株式会社テンミュー",
       },
     ],
-    type: "website",
   },
 };
 

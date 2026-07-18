@@ -1,8 +1,39 @@
+import type { Metadata } from "next";
 import { client } from "@/lib/microcms";
-import Link from "next/link";
 import styles from "@/components/Privacy.module.css";
 import Breadcrumb from "@/components/Breadcrumb";
 import Contact from "@/components/ContactLead";
+
+export const metadata: Metadata = {
+  title:
+    "プライバシーポリシー｜株式会社テンミュー",
+
+  description:
+    "テンミューの個人情報の取り扱いおよび管理方針についてご確認いただけます。",
+
+  alternates: {
+    canonical: "https://tenmew.jp/privacy_policy",
+  },
+
+  openGraph: {
+    title:
+      "プライバシーポリシー｜株式会社テンミュー",
+
+    description:
+      "テンミューの個人情報の取り扱いおよび管理方針についてご確認いただけます。",
+
+    url: "https://tenmew.jp/privacy_policy",
+
+    images: [
+      {
+        url: "/img/privacy_policy/ogp_privacy.jpg",
+        width: 1200,
+        height: 630,
+        alt: "プライバシーポリシー｜株式会社テンミュー",
+      },
+    ],
+  },
+};
 
 export default async function Home() {
   const data = await client.get({
