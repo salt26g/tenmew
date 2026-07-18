@@ -133,7 +133,7 @@ input[type="checkbox"]:checked + .hamburger .hamburger_txt::before {
   font-weight: bold;
 }
 input[type="checkbox"]:checked ~ .nav {
-  bottom: -15vh;
+  bottom: -17vh;
 }
 .nav .nav_lIst {
   border-bottom: dotted 2px;
@@ -144,22 +144,22 @@ input[type="checkbox"]:checked ~ .nav {
 }
 .nav_item a {
   transition: all 0.3s;
-  margin: 3.8vh 0;
+  margin: 3.3vh 0;
   display: block;
 }
 .nav_item a span {
   display: block;
 }
 .nav_item a span.ja {
-  font-size: 1.8vh;
+  font-size: 1.5vh;
   color: #1f592a;
   margin-bottom: 0.2vh;
 }
 .nav_item a span.en {
-  font-size: 3.3vh;
+  font-size: 3vh;
 }
 .nav_lIst a {
-  margin-bottom: 1.8vh;
+  margin-bottom: 1.5vh;
   display: block;
   font-size: 2vh;
 }

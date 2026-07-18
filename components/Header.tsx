@@ -13,7 +13,15 @@ export default function Header() {
     <header className="header">
       <div className="header_container">
         <div className="header_logo">
-          <Link href="/">
+          <Link href="/"
+          onClick={() => {
+            closeMenu();
+
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}>
             <Image src="/img/basic/logo_s.webp" alt="株式会社テンミュー" fill style={{ objectFit: "contain" }} />
           </Link>
         </div>
@@ -30,14 +38,30 @@ export default function Header() {
         <nav className="nav">
           <ul className="nav_lIst">
             <li className="nav_item">
-              <Link href="/" onClick={closeMenu}>
-                <span className="ja">トップ</span><span className="en">TOP</span>
+              <Link href="/"
+              onClick={() => {
+                closeMenu();
+
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}>
+              <span className="ja">トップ</span><span className="en">TOP</span>
               </Link>
             </li>
           </ul>
           <ul className="nav_lIst">
             <li className="nav_item">
-              <Link href="/about" onClick={closeMenu}>
+              <Link href="/about"
+              onClick={() => {
+                closeMenu();
+
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}>
                 <span className="ja">私たちについて</span><span className="en">ABOUT</span>
               </Link>
             </li>
@@ -53,7 +77,15 @@ export default function Header() {
           </ul>
           <ul className="nav_lIst">
             <li className="nav_item">
-              <Link href="/service" onClick={closeMenu}>
+              <Link href="/service"
+              onClick={() => {
+                closeMenu();
+
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}>
                 <span className="ja">サービス</span><span className="en">SERVICE</span>
               </Link>
             </li>
@@ -66,7 +98,15 @@ export default function Header() {
           </ul>
           <ul className="nav_lIst">
             <li className="nav_item">
-              <Link href="/contact" onClick={closeMenu}>
+              <Link href="/contact#top"
+              onClick={() => {
+                closeMenu();
+
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}>
                 <span className="ja">お問い合わせ・採用情報</span><span className="en">CONTACT・RECRUIT</span>
               </Link>
             </li>
