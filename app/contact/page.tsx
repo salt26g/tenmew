@@ -85,7 +85,7 @@ export default async function Home() {
                 <label htmlFor="message">お問い合わせ内容 <span className={styles.required_mark}>*</span></label>
                 <textarea id="message" name="message" required rows={8} className={styles.message_box} placeholder="お問い合わせ内容をご入力ください"/>
               </div>
-                <div className={`${styles.form_group} ${styles.checkbox_group}`}>
+                  <div className={`${styles.form_group} ${styles.checkbox_group}`}>
                   <label className={styles.privacy_policy}>
                     <input type="checkbox" name="privacy" required className={styles.privacy_check}/>
                     <Link href="/privacy_policy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</Link>に同意する。
