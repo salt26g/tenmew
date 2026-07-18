@@ -133,7 +133,7 @@ input[type="checkbox"]:checked + .hamburger .hamburger_txt::before {
   font-weight: bold;
 }
 input[type="checkbox"]:checked ~ .nav {
-  bottom: -13vh;
+  bottom: -15vh;
 }
 .nav .nav_lIst {
   border-bottom: dotted 2px;
