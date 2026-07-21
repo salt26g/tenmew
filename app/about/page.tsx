@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-
 import Image from "next/image";
 import styles from "@/components/About.module.css";
+import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageHero from "@/components/PageHero";
 import Contact from "@/components/ContactLead";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title:
@@ -39,6 +40,8 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
+  <>
+    <Header />
     <main className={styles.AboutPage}>
       <Breadcrumb items={[{ label: "私たちについて" }]} />
       <PageHero
@@ -167,5 +170,7 @@ export default function AboutPage() {
       </section>
       <Contact />
     </main>
+    <Footer />
+  </>
   );
 }

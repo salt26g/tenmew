@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "@/components/Header.module.css";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,9 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="header">
-      <div className="header_container">
-        <div className="header_logo">
+    <header className={styles.header}>
+      <div className={styles.header_container}>
+        <div className={styles.header_logo}>
           <Link href="/"
           onClick={() => {
             closeMenu();
@@ -31,13 +32,13 @@ export default function Header() {
           checked={isOpen}
           onChange={(e) => setIsOpen(e.target.checked)}
         />
-        <label htmlFor="check" className="hamburger">
-          <span className="hamburger_line"></span>
-          <span className="hamburger_txt"></span>
+        <label htmlFor="check" className={styles.hamburger}>
+          <span className={styles.hamburger_line}></span>
+          <span className={styles.hamburger_txt}></span>
         </label>
-        <nav className="nav">
-          <ul className="nav_lIst">
-            <li className="nav_item">
+        <nav className={styles.nav}>
+          <ul className={styles.nav_lIst}>
+            <li className={styles.nav_item}>
               <Link href="/"
               onClick={() => {
                 closeMenu();
@@ -47,12 +48,12 @@ export default function Header() {
                   behavior: "smooth",
                 });
               }}>
-              <span className="ja">トップ</span><span className="en">TOP</span>
+              <span className={styles.ja}>トップ</span><span className={styles.en}>TOP</span>
               </Link>
             </li>
           </ul>
-          <ul className="nav_lIst">
-            <li className="nav_item">
+          <ul className={styles.nav_lIst}>
+            <li className={styles.nav_item}>
               <Link href="/about"
               onClick={() => {
                 closeMenu();
@@ -62,7 +63,7 @@ export default function Header() {
                   behavior: "smooth",
                 });
               }}>
-                <span className="ja">私たちについて</span><span className="en">ABOUT</span>
+                <span className={styles.ja}>私たちについて</span><span className={styles.en}>ABOUT</span>
               </Link>
             </li>
             <li>
@@ -75,8 +76,8 @@ export default function Header() {
               <Link href="/about#company" onClick={closeMenu}>会社概要</Link>
             </li>
           </ul>
-          <ul className="nav_lIst">
-            <li className="nav_item">
+          <ul className={styles.nav_lIst}>
+            <li className={styles.nav_item}>
               <Link href="/service"
               onClick={() => {
                 closeMenu();
@@ -86,7 +87,7 @@ export default function Header() {
                   behavior: "smooth",
                 });
               }}>
-                <span className="ja">サービス</span><span className="en">SERVICE</span>
+                <span className={styles.ja}>サービス</span><span className={styles.en}>SERVICE</span>
               </Link>
             </li>
             <li>
@@ -96,8 +97,8 @@ export default function Header() {
               <Link href="/service#reasons" onClick={closeMenu}>選ばれる理由</Link>
             </li>
           </ul>
-          <ul className="nav_lIst">
-            <li className="nav_item">
+          <ul className={styles.nav_lIst}>
+            <li className={styles.nav_item}>
               <Link href="/contact#top"
               onClick={() => {
                 closeMenu();
@@ -107,7 +108,7 @@ export default function Header() {
                   behavior: "smooth",
                 });
               }}>
-                <span className="ja">お問い合わせ・採用情報</span><span className="en">CONTACT・RECRUIT</span>
+                <span className={styles.ja}>お問い合わせ・採用情報</span><span className={styles.en}>CONTACT・RECRUIT</span>
               </Link>
             </li>
             <li>

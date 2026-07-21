@@ -1,0 +1,148 @@
+/* hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.gr {
+  color: #1f592a;
+  display: inline;
+}
+.lead_ttl {
+  position: absolute;
+  z-index: 50;
+  top: 14vh;
+  width: 45%;
+  right: 12%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  font-size: 3.5vh;
+  letter-spacing: 0.1rem;
+}
+.lead_ttl p {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 0 3px #67ae3e;
+}
+.lead_ttl p:nth-child(2) {
+  margin-top: 2rem;
+}
+.lead_txt {
+  position: absolute;
+  z-index: 50;
+  top: 16vh;
+  width: 29%;
+  left: 0;
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  font-size: 2vh;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+.hero h1 {
+  position: absolute;
+  z-index: 1;
+  width: 95%;
+  height: 50%;
+  bottom: 0;
+  left: 4%;
+}
+/* about */
+.about .img {
+  position: relative;
+  width: 95%;
+  height: 60vh;
+  left: 0;
+  top: 0;
+}
+.about .txtBox {
+  background-color: #f4f4f4;
+  padding: 23vh 3% 75px;
+  margin-top: -21vh;
+}
+.about .txtBox h2 {
+  margin-bottom: 30px;
+}
+.about .txtBox h2 .en {
+  font-size: 8vw;
+  font-weight: bold;
+  border-bottom: solid 5px;
+  color: #1f592a;
+}
+.about .txtBox h2 .ja {
+  font-weight: bold;
+  padding: 0 0 8px 1rem;
+  position: relative;
+}
+.about .txtBox .ja:before {
+  content:"";
+  position:absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.about .txtBox p {
+  font-size: 15px;
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+.about .txtBox p .big {
+  font-size: 4.5vw;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
+}
+/* service */
+.service .img {
+  position: relative;
+  width: 95%;
+  height: 65vh;
+  right: 0;
+  top: 0;
+  margin: 75px 0 0 5%;
+}
+.service .txtBox {
+  padding: 75px 3%;
+}
+.service .txtBox h2 {
+  margin-bottom: 30px;
+}
+.service .txtBox h2 .en {
+  font-size: 8vw;
+  font-weight: bold;
+  border-bottom: solid 5px;
+  color: #1f592a;
+}
+.service .txtBox h2 .ja {
+  font-weight: bold;
+  padding: 0 0 8px 1rem;
+  position: relative;
+}
+.service .txtBox .ja:before {
+  content:"";
+  position:absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.service .txtBox p {
+  font-size: 15px;
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+.service .txtBox p .big {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
+}

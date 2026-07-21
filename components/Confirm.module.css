@@ -1,11 +1,8 @@
+.ConfirmPage {
+  padding: 10vh 3%;
+}
 .bg_yelgrn {
   background-color: #eaf5e4;
-}
-.bg_grn {
-  background-color: #1f592a;
-}
-.inner {
-  padding: 10vh 3%;
 }
 .section_ttl {
   margin-bottom: 30px;
@@ -31,25 +28,9 @@
   left: 0;
   background-color: #333;
 }
-.txt_box {
-  font-size: 15px;
-  line-height: 2em;
-  margin-bottom: 25px;
-}
-.txt_box .big {
-  font-size: 4.8vw;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 25px;
-}
-.txt_box .bold {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
-}
 .bg_wht_box {
   background-color: #fff;
-  box-shadow: 0 5px 10px #e3e3e3;
+  box-shadow: 0 5px 10px #e3e3e37e;
   padding: 2rem 4% 4rem;
   margin: 2rem 0 0;
 }
@@ -66,44 +47,50 @@
   margin: 0 0.3em;
   color: #67ae3e;
 }
-.ContactPage section {
-  scroll-margin-top: 13vh;
+.form_group dt {
+  font-weight: bold;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 1rem;
 }
-.bg_grn .section_ttl .en {
-  color: #67ae3e;
+.form_group dd {
+  margin-bottom: 2rem;
 }
-.bg_grn .section_ttl .ja {
-  color: #fff;
+.error_txt {
+  color: red;
+  font-size: 14px;
+  margin: 0 0 2rem;
 }
-.bg_grn .section_ttl .ja:before {
-  background-color: #fff;
-}
-.bg_grn .txt_box {
-  color: #fff;
-}
-.ContactPage section {
-  scroll-margin-top: 11vh;
-}
-.btn {
+.contactBtn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn a {
+.contactBtn button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 50px;
-  font-size: 16px;
+  padding: 14px 9vw;
+  font-size: 3.5vw;
   text-decoration: none;
   border-radius: 999px;
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
   color: #fff;
-  border: solid 1px #fff;
+  border: solid 1px#fff;
+  width: 9.5rem;
 }
-.btn a:before {
+.contactBtn button:first-child {
+  background-color: #67ae3e;
+}
+.contactBtn button:last-child {
+  background-color: #1f592a;
+}
+.contactBtn button+button{
+  margin-left: 5vw;
+}
+.contactBtn button:before {
   position: absolute;
   content: "";
   background-image: url(../public/img/basic/btn_icon_wh.webp);
@@ -111,8 +98,7 @@
   background-repeat: no-repeat;
   background-size: auto 1em;
   width: 16px;
-  height: 16px;
+  height: 1em;
   right: 10px;
-  top: 16px;
-  transform: rotate(270deg);
+  top: 18px;
 }

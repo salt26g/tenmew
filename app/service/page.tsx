@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { client } from "@/lib/microcms";
 import Image from "next/image";
 import styles from "@/components/Service.module.css";
+import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageHero from "@/components/PageHero";
 import Contact from "@/components/ContactLead";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title:
@@ -43,6 +45,8 @@ export default async function Home() {
   });
 
   return (
+  <>
+    <Header />
     <main className={styles.ServicePage}>
       <Breadcrumb items={[{ label: "サービス" }]} />
       <PageHero
@@ -129,5 +133,7 @@ export default async function Home() {
       </section>
       <Contact />
     </main>
+    <Footer />
+  </>
   );
 }

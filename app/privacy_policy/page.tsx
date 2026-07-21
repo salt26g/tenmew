@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { client } from "@/lib/microcms";
 import styles from "@/components/Privacy.module.css";
+import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import Contact from "@/components/ContactLead";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title:
@@ -41,6 +43,8 @@ export default async function Home() {
   });
 
   return (
+  <>
+    <Header />
     <main className={styles.PrivacyPage}>
       <Breadcrumb items={[{ label: "プライバシーポリシー" }]} />
       <section className={styles.hero}>
@@ -115,5 +119,7 @@ export default async function Home() {
       </section>
       <Contact />
     </main>
+    <Footer />
+  </>
   );
 }

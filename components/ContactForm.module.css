@@ -1,0 +1,72 @@
+.form_group label, .form_label {
+  font-weight: bold;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.form_group input, .form_group textarea {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.form_group .radio_item {
+  font-size: 14px;
+  height: 2rem;
+}
+.form_group .radio_item:first-child {
+  margin-top: 2rem;
+}
+.form_group .radio_item:last-child {
+  margin-bottom: 2rem;
+}
+.form_group .radio_item input {
+  width: auto;
+  margin-right: 0.5rem;
+  transform: scale(1);
+  accent-color: #1f592a;
+}
+.form_group .message_box {
+  height: 10rem;
+  vertical-align: top;
+  text-align: left;
+}
+.form_group .privacy_check {
+  opacity: 1;
+  visibility: initial;
+  position: static;
+  width: auto;
+  margin: 0 0.5rem 0 0;
+  accent-color: #1f592a;
+  transform: scale(1);
+}
+.form_group label.privacy_policy {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+.form_group label.privacy_policy input[type="checkbox"] {
+  opacity: 1;
+  position: static;
+  visibility: visible;
+  width: auto;
+  margin: 0 0.5rem 0 0;
+}
+.form_group label.privacy_policy a {
+  color: #67ae3e;
+  text-decoration: underline;
+}
+.form_group label.privacy_policy a {
+  color: #67ae3e;
+  text-decoration: underline;
+}
+.form_group .error_txt {
+  color: red;
+  font-size: 14px;
+  margin: -2rem 0 2rem;
+}
+.form_group.checkbox_group .error_txt {
+  text-align: center;
+}
