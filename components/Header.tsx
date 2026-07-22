@@ -23,7 +23,15 @@ export default function Header() {
               behavior: "smooth",
             });
           }}>
-            <Image src="/img/basic/logo_s.webp" alt="株式会社テンミュー" fill style={{ objectFit: "contain" }} />
+            <picture>
+              <source media="(min-width: 500px)" srcSet="/img/basic/logo_long.webp" />
+              <img
+                src="/img/basic/logo_s.webp"
+                alt="株式会社テンミュー"
+                loading="lazy"
+              />
+            {/*<Image src="/img/basic/logo_s.webp" alt="株式会社テンミュー" fill style={{ objectFit: "contain" }} />*/}
+            </picture>
           </Link>
         </div>
         <input
@@ -36,7 +44,7 @@ export default function Header() {
           <span className={styles.hamburger_line}></span>
           <span className={styles.hamburger_txt}></span>
         </label>
-        <nav className={styles.nav}>
+        <nav className={styles.nav_sp} aria-label="モバイルナビゲーション">
           <ul className={styles.nav_lIst}>
             <li className={styles.nav_item}>
               <Link href="/"
@@ -116,6 +124,55 @@ export default function Header() {
             </li>
             <li>
               <Link href="/contact#recruit" onClick={closeMenu}>採用情報</Link>
+            </li>
+          </ul>
+        </nav>
+        <nav className={styles.nav_pc} aria-label="デスクトップナビゲーション">
+          <ul className={styles.nav_lIst}>
+            <li>
+              <Link href="/about"
+              onClick={() => {
+                closeMenu();
+
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}>
+              私たちについて
+              </Link>
+            </li>
+            <li>
+              <Link href="/service"
+              onClick={() => {
+                closeMenu();
+
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}>
+              サービス
+              </Link>
+            </li>
+            <li>
+              <Link href="/about#company" onClick={closeMenu}>会社概要</Link>
+            </li>
+            <li>
+              <Link href="/contact#recruit" onClick={closeMenu}>採用情報</Link>
+            </li>
+            <li>
+              <Link href="/contact#top"
+              onClick={() => {
+                closeMenu();
+
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}>
+                お問い合わせ
+              </Link>
             </li>
           </ul>
         </nav>

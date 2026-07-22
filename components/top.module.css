@@ -146,3 +146,97 @@
   display: block;
   margin-bottom: 25px;
 }
+
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+/* hero */
+.lead_ttl {
+  width: 45%;
+  height: 280px;
+  top: 23%;
+  left: 7%;
+  right: auto;
+  writing-mode: horizontal-tb;
+  font-size: 4.2vh;
+}
+.lead_ttl p {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 5px #67ae3e;
+}
+.lead_ttl p:nth-child(2) {
+  margin: 0 0 0 15rem;
+}
+.lead_txt {
+  top: auto;
+  left: 5%;
+  bottom: 23%;
+  width: 45%;
+  writing-mode: horizontal-tb;
+  line-height: 3rem;
+}
+.hero h1 {
+  width: 70%;
+  height: 85%;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+/* about */
+.about {
+  clear: both;
+  overflow: hidden;
+}
+.about .img {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 60vh;
+  left: 0;
+  top: 0;
+}
+
+
+
+
+
+.about .txtBox {
+  background-color: #f4f4f4;
+  padding: 23vh 3% 75px;
+  margin-top: -21vh;
+}
+.about .txtBox h2 {
+  margin-bottom: 30px;
+}
+.about .txtBox h2 .en {
+  font-size: 8vw;
+  font-weight: bold;
+  border-bottom: solid 5px;
+  color: #1f592a;
+}
+.about .txtBox h2 .ja {
+  font-weight: bold;
+  padding: 0 0 8px 1rem;
+  position: relative;
+}
+.about .txtBox .ja:before {
+  content:"";
+  position:absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.about .txtBox p {
+  font-size: 15px;
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+.about .txtBox p .big {
+  font-size: 4.5vw;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
+}
+}

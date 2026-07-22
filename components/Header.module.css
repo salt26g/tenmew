@@ -13,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   height: inherit;
-  color: #fff;
   margin-right: auto;
   margin-left: auto;
   border-bottom: solid 1px #67ae3e;
@@ -24,11 +23,6 @@
   width: 15%;
   top: 2vh;
   left: 3%;
-  text-decoration: none;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
 }
 
 .header_container input[type="checkbox"] {
@@ -88,7 +82,7 @@
   letter-spacing: 0;
 }
 
-.nav {
+.nav_sp {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -100,35 +94,99 @@
   transition: all 0.5s;
   border-radius: 50px 50px 0 0;
   font-weight: bold;
+  display: block;
 }
-.header_container input[type="checkbox"]:checked ~ .nav {
+.nav_pc {
+  display: none;
+}
+.header_container input[type="checkbox"]:checked ~ .nav_sp {
   bottom: -17vh;
 }
-.nav .nav_lIst {
+.nav_sp .nav_lIst {
   border-bottom: dotted 2px;
   letter-spacing: 0.1rem;
 }
-.nav .nav_lIst:last-child {
+.nav_sp .nav_lIst:last-child {
   border-bottom: none;
 }
-.nav_item a {
+.nav_sp .nav_item a {
   transition: all 0.3s;
   margin: 3.3vh 0;
   display: block;
 }
-.nav_item a span {
+.nav_sp .nav_item a span {
   display: block;
 }
-.nav_item a span.ja {
+.nav_sp .nav_item a span.ja {
   font-size: 1.5vh;
   color: #1f592a;
   margin-bottom: 0.2vh;
 }
-.nav_item a span.en {
+.nav_sp .nav_item a span.en {
   font-size: 3vh;
 }
-.nav_lIst a {
+.nav_sp .nav_lIst a {
   margin-bottom: 1.5vh;
   display: block;
   font-size: 2vh;
+}
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+.header {
+  height: 10vh;
+}
+.header_container {
+  padding: 2vh 2%;
+}
+.header_logo a {
+  height: 70%;
+  width: 14%;
+}
+.header_logo a:hover {
+  opacity: 0.7;
+}
+.header_container input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+.nav_sp {
+  display: none;
+}
+.nav_pc {
+  display: block;
+  color: #333;
+  position: fixed;
+  width: 50%;
+  right: 0;
+  font-weight: bold;
+  display: block;
+}
+.nav_pc .nav_lIst {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 4rem;
+}
+.nav_pc .nav_lIst li+li {
+  padding-left: 2rem;
+}
+.nav_pc .nav_lIst li a {
+  font-size: 14px;
+}
+.nav_pc .nav_lIst li a:hover {
+  color: #67ae3e;
+  transition: all 0.3s;
+}
+.nav_pc .nav_lIst li:last-child a {
+  background-color: #67ae3e;
+  border-radius: 50px;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.nav_pc .nav_lIst li:last-child a:hover {
+  background-color: #1f592a;
+  transition: all 0.4s;
+}
 }
