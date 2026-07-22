@@ -52,9 +52,63 @@
   background-image: url(../public/img/basic/btn_icon_wh.webp);
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: auto 1em;
+  background-size: auto 20px;
   width: 16px;
   height: 1em;
   right: 10px;
   top: 18px;
+}
+
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+.contact {
+  background-image: url("/img/basic/pc_top_bg01.webp");
+  background-size: 100% 100%;
+  padding: 30px 15%;
+  overflow: hidden;
+  clear: both;
+}
+.contact .contact_txt {
+  float: left;
+  width: 50%;
+}
+.contactTtl {
+  font-size: 100px;
+  border-bottom: solid 10px #fff;
+  margin-bottom: 30px;
+}
+.contactTxt {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+}
+.contactBtn {
+  float: right;
+  width: 40%;
+  padding: 40px 0;
+  justify-content: space-between;
+  align-items:  center;
+  flex-direction: column;
+}
+.contactBtn a {
+  padding: 18px 80px;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.contactBtn a+a{
+  margin: 20px 0 0 0;
+}
+.contactBtn a:before {
+  width: 18px;
+  height: 18px;
+  right: 15px;
+  top: 24px;
+}
+.contactBtn a:hover {
+  background-color: #fff;
+  color: #333;
+}
+.contactBtn a:hover:before {
+  background-image: url(../public/img/basic/btn_icon_bk.webp);
+}
 }

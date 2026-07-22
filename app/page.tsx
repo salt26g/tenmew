@@ -58,7 +58,14 @@ export default async function Home() {
       </section>
       <section className={styles.about}>
         <div className={styles.img}>
-          <Image src="/img/top/top_img01.webp" alt="私たちについて" fill style={{ objectFit: "contain" }} />
+          <picture>
+              <source media="(min-width: 500px)" srcSet="/img/top/pc_top_img01.webp" />
+              <img
+                src="/img/top/top_img01.webp"
+                alt="私たちについて"
+                loading="lazy"
+              />
+            </picture>
         </div>
         <div className={styles.txtBox}>
           <h2><span className={styles.en}>ABOUT</span><span className={styles.ja}>私たちについて</span></h2>
@@ -70,7 +77,12 @@ export default async function Home() {
       </section>
       <section className={styles.service}>
         <div className={styles.img}>
-          <Image src="/img/top/top_img02.webp" alt="サービス" fill style={{ objectFit: "contain" }} />
+          <img
+                src="/img/top/top_img02.webp"
+                alt="サービス"
+                loading="lazy"
+              />
+          {/*<Image src="/img/top/top_img02.webp" alt="サービス" fill style={{ objectFit: "contain" }} />*/}
         </div>
         <div className={styles.txtBox}>
           <h2><span className={styles.en}>SERVICE</span><span className={styles.ja}>サービス</span></h2>

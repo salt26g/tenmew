@@ -55,11 +55,8 @@
 }
 /* about */
 .about .img {
-  position: relative;
   width: 95%;
-  height: 60vh;
-  left: 0;
-  top: 0;
+  margin-bottom: 5vh
 }
 .about .txtBox {
   background-color: #f4f4f4;
@@ -101,13 +98,11 @@
   margin-bottom: 25px;
 }
 /* service */
+.service  {
+  overflow: hidden;
+}
 .service .img {
-  position: relative;
-  width: 95%;
-  height: 65vh;
-  right: 0;
-  top: 0;
-  margin: 75px 0 0 5%;
+  margin: 75px -5% 0 5%;
 }
 .service .txtBox {
   padding: 75px 3%;
@@ -186,57 +181,56 @@
 .about {
   clear: both;
   overflow: hidden;
+  background-color: #f4f4f4;
+  border-radius:  0 50vh 50vh 0;
+  margin-right: 2%;
 }
 .about .img {
   float: left;
-  position: relative;
   width: 50%;
-  height: 60vh;
-  left: 0;
-  top: 0;
+  margin: 0;
 }
-
-
-
-
-
 .about .txtBox {
-  background-color: #f4f4f4;
-  padding: 23vh 3% 75px;
-  margin-top: -21vh;
+  float: left;
+  width: 35%;
+  padding: 65px 0 0;
+  margin: 0 0 0 5%;
 }
-.about .txtBox h2 {
-  margin-bottom: 30px;
+.about .txtBox h2, .service .txtBox h2 {
+  margin-bottom: 65px;
 }
-.about .txtBox h2 .en {
-  font-size: 8vw;
-  font-weight: bold;
-  border-bottom: solid 5px;
-  color: #1f592a;
+.about .txtBox h2 .en, .service .txtBox h2 .en {
+  font-size: 52px;
+  border-bottom: solid 8px;
 }
-.about .txtBox h2 .ja {
-  font-weight: bold;
-  padding: 0 0 8px 1rem;
-  position: relative;
+.about .txtBox h2 .ja, .service .txtBox h2 .ja {
+  font-size: 22px;
+  padding: 0 0 14px 30px;
 }
-.about .txtBox .ja:before {
-  content:"";
-  position:absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #333;
+.about .txtBox p .big, .service .txtBox p {
+  font-size: 30px;
+  margin-bottom: 35px;
 }
-.about .txtBox p {
+.about .txtBox p, .service .txtBox p {
   font-size: 15px;
   line-height: 2em;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
-.about .txtBox p .big {
-  font-size: 4.5vw;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 25px;
+/* service */
+.service {
+  clear: both;
+  overflow: hidden;
+  margin: 150px 0 250px;
+}
+.service .img {
+  margin: 0 5% 0;
+  float: right;
+  width: 40%;
+}
+.service .txtBox {
+  float: right;
+  width: 35%;
+  margin-right: 5%;
+  padding: 150px 0 0 0;
 }
 }
