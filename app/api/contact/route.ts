@@ -17,8 +17,8 @@ export async function POST(request: Request) {
     const inquiryLabel = INQUIRY_TYPES.find((t) => t.value === inquiryType)?.label ?? inquiryType;
 
     const { error } = await resend.emails.send({
-        from: "お問い合わせフォーム <info@tenmew.jp>", // ドメイン検証後は自分のドメインに変更
-        to: "salt-626kg@ezweb.ne.jp",
+        from: "テンミューお問い合わせフォーム <info@tenmew.jp>", // ドメイン検証後は自分のドメインに変更
+        to: "xaxatan0000@gmail.com",
         replyTo: email,
         subject: `【お問い合わせ】${inquiryLabel}`,
         text: [
