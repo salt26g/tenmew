@@ -48,3 +48,88 @@
   margin-bottom: 10px;
   display: block;
 }
+
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+.footer {
+  padding: 100px 0 50px;
+}
+.footer .wrap{
+  margin: 0 auto;
+  max-width: 1024px;
+  clear: both;
+  overflow: hidden;
+}
+.fot_log {
+  position: static;
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+  float: left;
+  width: 200px;
+}
+.fot_log a {
+  width: 200px;
+  display: inline-block;
+}
+.fot_nav {
+  float: right;
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.fot_nav li {
+  margin-bottom: 0;
+}
+.fot_nav li+li {
+  margin-left: 25px;
+}
+.fot_nav_ttl {
+  margin-bottom: 1rem;
+}
+.fot_nav_ttl .en {
+  font-size: 35px;
+}
+.fot_nav_ttl .sp {
+  display: none;
+}
+.fot_nav_lnk {
+  margin-bottom: 0;
+}
+.fot_nav_lnk li {
+  border-right: none;
+  border-bottom: dotted 2px #333;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  display: block;
+}
+.fot_nav_lnk li+li {
+  margin-left: 0;
+}
+.fot_nav_lnk li:last-child {
+  border-bottom: none;
+}
+.footer .wrap+.wrap{
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: solid 1px #333;
+}
+.fot_txt_lnk, .fot_txt {
+  margin-bottom: 0;
+  display: inline-block;
+}
+.footer .wrap:last-child{
+  position: relative;
+}
+.fot_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fot_txt_lnk {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+}

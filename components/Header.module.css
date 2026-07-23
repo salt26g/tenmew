@@ -24,6 +24,11 @@
   top: 2vh;
   left: 3%;
 }
+.header_logo a img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
 
 .header_container input[type="checkbox"] {
   opacity: 0;
@@ -145,6 +150,11 @@
 .header_logo a:hover {
   opacity: 0.7;
 }
+.header_logo a img {
+  position: static;
+  height: auto;
+}
+
 .header_container input[type="checkbox"] {
   display: none;
 }

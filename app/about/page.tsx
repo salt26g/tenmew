@@ -48,7 +48,8 @@ export default function AboutPage() {
         en="ABOUT"
         ja="私たちについて"
         lead={"テンミューが目指す社会やミッション、\n会社概要をご紹介します。"}
-        image="/img/about/about_img01.webp"
+        image_pc="/img/about/pc_about_img01.webp"
+        image_sp="/img/about/about_img01.webp"
         alt="私たちについて"
         links={[
           {

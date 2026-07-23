@@ -30,7 +30,6 @@ export default function Header() {
                 alt="株式会社テンミュー"
                 loading="lazy"
               />
-            {/*<Image src="/img/basic/logo_s.webp" alt="株式会社テンミュー" fill style={{ objectFit: "contain" }} />*/}
             </picture>
           </Link>
         </div>
