@@ -52,12 +52,6 @@ export default function PageHero({
               loading="lazy"
             />
           </picture>
-          {/*<Image
-            src={image}
-            alt={alt}
-            fill
-            style={{ objectFit: "contain" }}
-          />*/}
         </div>
       </div>
       <ul className={styles.hero_anc}>

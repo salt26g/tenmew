@@ -28,9 +28,7 @@
   margin-bottom: 3vh;
 }
 .hero .hero_img {
-  position: relative;
   width: 95%;
-  height: 50vh;
   margin-left: 5%;
 }
 .hero_anc {
@@ -61,4 +59,65 @@
   right: 41%;
   bottom: 0.5rem;
   transform: rotate(90deg);
+}
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+.hero_mv {
+  clear: both;
+  overflow: hidden;
+}
+.hero .hero_lead {
+  margin: 130px 0 0 15%;
+  float: left;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero h1 .en {
+  font-size: 55px;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+.hero h1 .en:before {
+  height: 8px;
+}
+.hero h1 .ja {
+  font-size: 27px;
+  display: block;
+  margin-bottom: 60px;
+}
+.hero .lead {
+  line-height: 2.5rem;
+}
+.hero .hero_img {
+  float: right;
+  width: 55%;
+  margin-left: 0;
+}
+.hero_anc {
+  margin: 100px auto;
+  width: 1024px;
+}
+.hero_anc li+li {
+  margin-left: 70px;
+}
+.hero_anc li a {
+  padding: 20px 50px 2.5rem;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.hero_anc li a:hover {
+  background-color: #eaf5e4;
+}
+.hero_anc li a:before {
+  background-position: center;
+  background-size: auto 1em;
+  width: 16px;
+  height: 100%;
+  right: 45%;
+  bottom: -1.2rem;
+}
 }

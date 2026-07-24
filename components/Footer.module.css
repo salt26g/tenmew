@@ -66,11 +66,10 @@
   height: auto;
   margin-bottom: 0;
   float: left;
-  width: 200px;
 }
-.fot_log a {
-  width: 200px;
+.fot_log a img {
   display: inline-block;
+  width: 130px;
 }
 .fot_nav {
   float: right;
@@ -83,13 +82,13 @@
   margin-bottom: 0;
 }
 .fot_nav li+li {
-  margin-left: 25px;
+  margin-left: 50px;
 }
 .fot_nav_ttl {
   margin-bottom: 1rem;
 }
 .fot_nav_ttl .en {
-  font-size: 35px;
+  font-size: 27px;
 }
 .fot_nav_ttl .sp {
   display: none;

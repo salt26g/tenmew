@@ -66,56 +66,60 @@ export default function AboutPage() {
           },
         ]}
       />
-      <section id="vision">
-        <div className={`${styles.bg_grn} ${styles.inner}`}>
-          <h2 className={styles.section_ttl}><span className={styles.en}>VISION</span><span className={styles.ja}>私たちの想い</span></h2>
-          <p className={styles.txt_box}>
-            <span className={styles.big}>「なにそれ面白そう。」があふれる社会へ。</span>
-          </p>
-          <p className={styles.txt_box}>
-            人は自分の可能性を感じられたとき、初めて未来を想像し、「やってみたい」と行動します。
-            一方で、自分の可能性に気づけず、「自分には無理」と挑戦を諦めてしまう人も少なくありません。
-          </p>
-          <p className={styles.txt_box}>
-            だから私たちは、一人ひとりの挑戦を後押しし、一歩踏み出すきっかけをつくりたい。
-            その一歩が、新しい出会いや可能性を生み、一人ひとりのより良い未来へとつながっていく。
-          </p>
-          <p className={styles.txt_box}>
-            <span className={styles.bold}>「よく分からない。」だから、やめておく。</span>
-            <span className={styles.bold}>そんな選択ではなく、</span>
-            <span className={styles.bold}>「なにそれ面白そう。」だから、やってみる。</span>
-          </p>
-          <p className={styles.txt_box}>
-            この選択が当たり前になる社会を、テンミューは目指しています。
-          </p>
+      <section id="vision" className={styles.vision}>
+        <div className={styles.bg_grn}>
+          <div className={styles.inner}>
+            <h2 className={styles.section_ttl}><span className={styles.en}>VISION</span><span className={styles.ja}>私たちの想い</span></h2>
+            <p className={styles.txt_box}>
+              <span className={styles.big}>「なにそれ面白そう。」があふれる社会へ。</span>
+            </p>
+            <p className={styles.txt_box}>
+              人は自分の可能性を感じられたとき、初めて未来を想像し、「やってみたい」と行動します。
+              一方で、自分の可能性に気づけず、「自分には無理」と挑戦を諦めてしまう人も少なくありません。
+            </p>
+            <p className={styles.txt_box}>
+              だから私たちは、一人ひとりの挑戦を後押しし、一歩踏み出すきっかけをつくりたい。
+              その一歩が、新しい出会いや可能性を生み、一人ひとりのより良い未来へとつながっていく。
+            </p>
+            <p className={styles.txt_box}>
+              <span className={styles.bold}>「よく分からない。」だから、やめておく。</span>
+              <span className={styles.bold}>そんな選択ではなく、</span>
+              <span className={styles.bold}>「なにそれ面白そう。」だから、やってみる。</span>
+            </p>
+            <p className={styles.txt_box}>
+              この選択が当たり前になる社会を、テンミューは目指しています。
+            </p>
+          </div>
         </div>
-        <div className={`${styles.bg_gry} ${styles.inner}`}>
-          <h3 className={styles.section_sub_ttl}>テンミューが大切にしていること</h3>
-          <p className={styles.txt_box}>
-            私たちは、人は未来を想像できたとき、初めて夢や目標を持てると考えています。夢や目標があるから挑戦できる。挑戦を続けるから、新しい未来を実現できる。
-          </p>
-          <p className={styles.txt_box}>
-            <span className={styles.bold}>「想像 → 挑戦 → 実現」</span>
-          </p>
-          <p className={styles.txt_box}>
-            テンミューは、この循環こそが、人の可能性を広げる原動力だと信じています。
-            だからこそ、一人ひとりが理想の未来を想像し、その一歩を踏み出すきっかけをつくる存在でありたいと考えています。
-          </p>
-          <div className={styles.bg_wht_box}>
-            <p className={styles.quote}>
-              「空を飛ぶことを可能にしたのは、<br />
-              <span className={styles.right}>空を飛ぶことを夢見たからである。」</span>
-              <span className={styles.name}>— カール・ポパー</span>
+        <div className={styles.bg_gry}>
+          <div className={styles.inner}>
+            <h3 className={styles.section_sub_ttl}>テンミューが大切にしていること</h3>
+            <p className={styles.txt_box}>
+              私たちは、人は未来を想像できたとき、初めて夢や目標を持てると考えています。夢や目標があるから挑戦できる。挑戦を続けるから、新しい未来を実現できる。
             </p>
-            <p className={styles.quote}>
-              「私は失敗したことはない。<br />
-              <span className={styles.right}>ただ、うまくいかない方法を1万通り見つけただけだ。」</span>
-              <span className={styles.name}>— トーマス・エジソン</span>
+            <p className={styles.txt_box}>
+              <span className={styles.bold}>「想像 → 挑戦 → 実現」</span>
             </p>
-            <p className={styles.quote}>
-              「人間が想像できることは、必ず人間が実現できる。」
-              <span className={styles.name}>— ジュール・ヴェルヌ</span>
+            <p className={styles.txt_box}>
+              テンミューは、この循環こそが、人の可能性を広げる原動力だと信じています。
+              だからこそ、一人ひとりが理想の未来を想像し、その一歩を踏み出すきっかけをつくる存在でありたいと考えています。
             </p>
+            <div className={styles.bg_wht_box}>
+              <p className={styles.quote}>
+                「空を飛ぶことを可能にしたのは、
+                <span className={styles.right}>空を飛ぶことを夢見たからである。」</span>
+                <span className={styles.name}>— カール・ポパー</span>
+              </p>
+              <p className={styles.quote}>
+                「私は失敗したことはない。
+                <span className={styles.right}>ただ、うまくいかない方法を1万通り見つけただけだ。」</span>
+                <span className={styles.name}>— トーマス・エジソン</span>
+              </p>
+              <p className={styles.quote}>
+                「人間が想像できることは、必ず人間が実現できる。」
+                <span className={styles.name}>— ジュール・ヴェルヌ</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -155,23 +159,23 @@ export default function AboutPage() {
           <h2 className={styles.section_ttl}><span className={styles.en}>COMPANY</span><span className={styles.ja}>会社概要</span></h2>
           <ul className={styles.company_info}>
             <li>
-              <p><span>会社名</span>株式会社テンミュー</p>
+              <p><span className={styles.company_item}>会社名</span><span className={styles.company_txt}>株式会社テンミュー</span></p>
             </li>
             <li>
-              <p><span>住　所</span>東京都調布市仙川町1-1-2</p>
+              <p><span className={styles.company_item}>住　所</span><span className={styles.company_txt}>東京都調布市仙川町1-1-2</span></p>
             </li>
             <li>
-              <p><span>代表取締役</span>本川 篤</p>
+              <p><span className={styles.company_item}>代表取締役</span><span className={styles.company_txt}>本川 篤</span></p>
             </li>
             <li>
-              <p><span>設　立</span>令和8年2月16日</p>
+              <p><span className={styles.company_item}>設　立</span><span className={styles.company_txt}>令和8年2月16日</span></p>
             </li>
             <li>
-              <p><span>資本金</span>300,000円</p>
+              <p><span className={styles.company_item}>資本金</span><span className={styles.company_txt}>300,000円</span></p>
             </li>
             <li>
-              <p><span>事業内容</span>人材育成、研修及びコンサルティング業<br />
-              有料職業紹介事業</p>
+              <p><span className={styles.company_item}>事業内容</span><span className={styles.company_txt}>人材育成、研修及びコンサルティング業<br />
+              有料職業紹介事業</span></p>
             </li>
           </ul>
         </div>

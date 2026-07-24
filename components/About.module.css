@@ -1,3 +1,6 @@
+.AboutPage section {
+  scroll-margin-top: 11vh;
+}
 .bg_grn {
   background-color: #1f592a;
 }
@@ -77,11 +80,17 @@
   display: block;
   text-align: right;
 }
+.img {
+  width: 95%;
+  margin-right: 5%;
+  padding: 10vh 0 0;
+}
 .mission .tra_box {
-  background-color: #ffffff7a;
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 10px #e3e3e3;
   padding: 10vh 6% 2vh 3%;
-  margin: -14vh 0 0 3%;
+  margin: -5vh 0 0 3%;
+  position: relative;
 }
 .mission .txt_box .big {
   color: #67ae3e;
@@ -91,7 +100,7 @@
   border-bottom: solid 1px #7a7a7a;
   margin-bottom: 1.5rem;
 }
-.company_info li span {
+.company_info li .company_item {
   display: block;
   font-weight: bold;
   color: #1f592a;
@@ -99,14 +108,6 @@
 }
 .company_info li p {
   margin-bottom: 1.5rem;
-}
-.img {
-  position: relative;
-  width: 95%;
-  height: 60vh;
-  left: 0;
-  top: 0;
-  z-index: -1;
 }
 .bg_grn .section_ttl .en {
   color: #67ae3e;
@@ -120,6 +121,115 @@
 .bg_grn .txt_box {
   color: #fff;
 }
-.AboutPage section {
-  scroll-margin-top: 11vh;
+
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+  .AboutPage section {
+  scroll-margin-top: 10vh;
+}
+.inner {
+  padding: 120px 0;
+  width: 1024px;
+  margin: auto;
+}
+.section_ttl {
+  margin-bottom: 65px;
+  letter-spacing: 0.1rem;
+}
+.section_ttl .en {
+  font-size: 52px;
+  border-bottom: solid 8px;
+}
+.section_ttl .ja {
+  font-size: 22px;
+  padding: 0 0 14px 30px;
+}
+.txt_box {
+  font-size: 16px;
+}
+.txt_box .big {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.section_sub_ttl {
+  font-size: 27px;
+}
+.bg_gry .section_sub_ttl, .bg_gry .txt_box {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.bg_wht_box {
+  padding: 3rem 5% 0;
+  margin: 3rem 2% 0;
+}
+.quote {
+  display: inline-block;
+  font-size: 18px;
+}
+.quote .right {
+  text-align: left;
+  display: inline-block;
+}
+.quote .name {
+  display: inline;
+  margin-left: 0.5rem;
+}
+.mission {
+  clear: both;
+  overflow: hidden;
+  padding: 150px 0;
+  position: relative;
+}
+.mission .img {
+  float: left;
+  width: 50%;
+  margin-right: 0;
+  padding: 0;
+}
+.mission .tra_box {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  width: 55%;
+  padding: 50px 10% ;
+  margin: 0;
+}
+.mission .txt_box .big {
+  font-size: 40px;
+  letter-spacing: 0.1rem;
+}
+.company_info {
+  clear: both;
+  overflow: hidden;
+  width: 900px;
+  margin: auto;
+}
+.company_info li {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.company_info li .company_item {
+  border-bottom: solid 1px #7a7a7a;
+  float: left;
+  width: 20%;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+.company_info li .company_txt {
+  border-bottom: solid 1px #7a7a7a;
+  float: right;
+  width: 78%;
+  margin-left: 2%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5rem;
+  padding-left: 3rem;
+}
+.company_info li p {
+  margin-bottom: 0;
+}
 }

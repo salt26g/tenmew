@@ -68,27 +68,29 @@ export default async function Home() {
         ]}
       />
       <section id="support" className={styles.support}>
-        <div className={`${styles.bg_yelgrn} ${styles.inner}`}>
-          <h2 className={styles.section_ttl}><span className={styles.en}>SUPPORT</span><span className={styles.ja}>キャリア支援</span></h2>
-          <p className={styles.txt_box}>
-            <span className={styles.big}>人に寄り添うキャリア支援</span>
-          </p>
-          <p className={styles.txt_box}>
-            大手人材会社出身のキャリアアドバイザーが、新卒・中途を問わず、一人ひとりの人生に寄り添ったキャリア支援を行います。
-          </p>
-          <p className={styles.txt_box}>
-            あなた自身もまだ気づいていない強みや才能、可能性を発掘し、本当に自分らしく活躍できる仕事の斡旋をお手伝い。
-          </p>
-          <p className={styles.txt_box}>
-            仕事のみだけでなく、結婚や子育てなどのライフイベント、趣味との両立、キャリアアップ、マネジメント、
-            経営者としてのキャリアなど、一人ひとりが思い描く人生に合わせて、最適な選択を一緒に考えます。
-          </p>
-        </div>
-        <div className={styles.img}>
-          <img src="/img/service/img01.webp" alt="キャリア支援" loading="lazy"/>
+        <div className={styles.bg_yelgrn}>
+          <div className={styles.inner}>
+            <h2 className={styles.section_ttl}><span className={styles.en}>SUPPORT</span><span className={styles.ja}>キャリア支援</span></h2>
+            <p className={styles.txt_box}>
+              <span className={styles.big}>人に寄り添うキャリア支援</span>
+            </p>
+            <p className={styles.txt_box}>
+              大手人材会社出身のキャリアアドバイザーが、新卒・中途を問わず、一人ひとりの人生に寄り添ったキャリア支援を行います。
+            </p>
+            <p className={styles.txt_box}>
+              あなた自身もまだ気づいていない強みや才能、可能性を発掘し、本当に自分らしく活躍できる仕事の斡旋をお手伝い。
+            </p>
+            <p className={styles.txt_box}>
+              仕事のみだけでなく、結婚や子育てなどのライフイベント、趣味との両立、キャリアアップ、マネジメント、
+              経営者としてのキャリアなど、一人ひとりが思い描く人生に合わせて、最適な選択を一緒に考えます。
+            </p>
+          </div>
+          <div className={styles.img}>
+            <img src="/img/service/img01.webp" alt="キャリア支援" loading="lazy"/>
+          </div>
         </div>
       </section>
-      <section id="reasons" className={styles.inner}>
+      <section id="reasons" className={`${styles.reasons} ${styles.inner}`}>
         <h2 className={styles.section_sub_ttl}>テンミューが選ばれる<span className={`${styles.big} ${styles.yelgrn}`}>3</span>つの理由</h2>
         <ol className={styles.reasons_ol}>
           <li>

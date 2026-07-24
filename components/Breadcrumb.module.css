@@ -37,3 +37,9 @@
   color: #1f592a;
   font-weight: bold;
 }
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+.list {
+  font-size: 15px;
+}
+}

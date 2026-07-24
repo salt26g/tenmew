@@ -77,11 +77,7 @@ export default async function Home() {
       </section>
       <section className={styles.service}>
         <div className={styles.img}>
-          <img
-                src="/img/top/img02.webp"
-                alt="サービス"
-                loading="lazy"
-              />
+          <img src="/img/top/img02.webp" alt="サービス" loading="lazy"/>
         </div>
         <div className={styles.txtBox}>
           <h2><span className={styles.en}>SERVICE</span><span className={styles.ja}>サービス</span></h2>
