@@ -44,13 +44,10 @@ export default function ConfirmPage() {
   const inquiryLabel = INQUIRY_TYPES.find((t) => t.value === data.inquiryType)?.label ?? "";
 
   return (
-    <main className={`${styles.ConfirmPage} ${styles.bg_yelgrn} ${styles.inner}`}>
-      <section className={styles.confirm}>
+    <main className={`${styles.ConfirmPage} ${styles.bg_yelgrn}`}>
+      <section className={`${styles.confirm} ${styles.inner}`}>
         <h1 className={styles.section_ttl}><span className={styles.en}>CONFIRM</span><span className={styles.ja}>入力内容のご確認</span></h1>
         <div className={styles.bg_wht_box}>
-          <p className={styles.required_note}>
-            「<span className={styles.required_mark}>*</span>」のマークは必須項目です。　
-          </p>
           <dl>
           {data.company && (
             <div className={styles.form_group}>

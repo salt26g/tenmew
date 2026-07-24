@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 
 export default function CompletePage() {
   return (
-    <main className={`${styles.CompletePage} ${styles.bg_yelgrn} ${styles.inner}`}>
-      <section className={styles.complete}>
+    <main className={`${styles.CompletePage} ${styles.bg_yelgrn}`}>
+      <section className={`${styles.complete} ${styles.inner}`}>
         <h1 className={styles.section_ttl}><span className={styles.en}>COMPLETE</span><span className={styles.ja}>送信完了</span></h1>
         <p className={styles.txt_box}>
           お問い合わせいただきありがとうございます。

@@ -34,19 +34,6 @@
   padding: 2rem 4% 4rem;
   margin: 2rem 0 0;
 }
-.required_note {
-  font-size: 13px;
-  font-weight: bold;
-  color: #67ae3e;
-  display: block;
-  text-align: right;
-  margin-bottom: 2rem;
-}
-.required_mark {
-  font-size: 15px;
-  margin: 0 0.3em;
-  color: #67ae3e;
-}
 .form_group dt {
   font-weight: bold;
   display: block;
@@ -82,10 +69,13 @@
   width: 9.5rem;
 }
 .contactBtn button:first-child {
-  background-color: #67ae3e;
+  background-color: #fff;
+  color: #333;
+  border: solid 1px#333;
 }
 .contactBtn button:last-child {
-  background-color: #1f592a;
+  background-color: #67ae3e;
+  border: solid 1px #67ae3e;
 }
 .contactBtn button+button{
   margin-left: 5vw;
@@ -101,4 +91,57 @@
   height: 1em;
   right: 10px;
   top: 18px;
+}
+.contactBtn button:first-child:before  {
+  background-image: url(../public/img/basic/btn_icon_bk.webp);
+}
+
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+.inner {
+  padding: 50px 0;
+  width: 1024px;
+  margin: auto;
+}
+.section_ttl {
+  margin-bottom: 65px;
+  letter-spacing: 0.1rem;
+}
+.section_ttl .en {
+  font-size: 52px;
+  border-bottom: solid 8px;
+}
+.section_ttl .ja {
+  font-size: 22px;
+  padding: 0 0 14px 30px;
+}
+.contactBtn button {
+  padding: 18px 0;
+  font-size: 18px;
+  transition: all 0.3s;
+  width: 220px;
+}
+.contactBtn button:first-child {
+  background-color: #fff;
+}
+.contactBtn button:last-child {
+  background-color: #67ae3e;
+}
+.contactBtn button:hover {
+  background-color: #1f592a;
+  color: #fff;
+  border: solid 1px #1f592a;
+}
+.contactBtn button:hover:before  {
+  background-image: url(../public/img/basic/btn_icon_wh.webp);
+}
+.contactBtn button+button{
+  margin-left: 50px;
+}
+.contactBtn button:before {
+  width: 18px;
+  height: 18px;
+  right: 15px;
+  top: 24px;
+}
 }

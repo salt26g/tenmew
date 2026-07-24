@@ -67,32 +67,36 @@ export default async function Home() {
         ]}
       />
       <section id="contact" className={styles.contact}>
-        <div className={`${styles.bg_yelgrn} ${styles.inner}`}>
-          <h2 className={styles.section_ttl}><span className={styles.en}>CONTACT</span><span className={styles.ja}>お問い合わせ</span></h2>
-          <p className={styles.txt_box}>
-            下記フォームにご記入いただいた内容に基づき、担当者より折り返しご連絡させていただきます。
-            お問い合わせの内容によっては、ご回答までにお時間をいただく場合がございます。ご了承ください。
-          </p>
-          <div className={styles.bg_wht_box}>
-            <p className={styles.required_note}>
-              「<span className={styles.required_mark}>*</span>」のマークは必須項目です。　
+        <div className={styles.bg_yelgrn}>
+          <div className={styles.inner}>
+            <h2 className={styles.section_ttl}><span className={styles.en}>CONTACT</span><span className={styles.ja}>お問い合わせ</span></h2>
+            <p className={styles.txt_box}>
+              下記フォームにご記入いただいた内容に基づき、担当者より折り返しご連絡させていただきます。
+              お問い合わせの内容によっては、ご回答までにお時間をいただく場合がございます。ご了承ください。
             </p>
-            <ContactForm />
+            <div className={styles.bg_wht_box}>
+              <p className={styles.required_note}>
+                「<span className={styles.required_mark}>*</span>」のマークは必須項目です。
+              </p>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
       <section id="recruit">
-        <div className={`${styles.bg_grn} ${styles.inner}`}>
-          <h2 className={styles.section_ttl}><span className={styles.en}>RECRUIT</span><span className={styles.ja}>採用情報</span></h2>
-          <p className={styles.txt_box}>
-            <span className={styles.big}>「なにそれ面白そう。」を、一緒につくる。</span>
-          </p>
-          <p className={styles.txt_box}>
-            現在、積極的な採用活動は行っていません。
-            ただ、テンミューの想いや事業に興味を持っていただけた方とのご縁は大切にしたいと考えています。
-            「一緒に挑戦してみたい。」と感じていただけたら、上記お問い合わせフォームよりお気軽にお問い合わせください。
-          </p>
-          <div className={styles.btn}><a href="#contact">お問い合わせする</a></div>
+        <div className={styles.bg_grn}>
+          <div className={styles.inner}>
+            <h2 className={styles.section_ttl}><span className={styles.en}>RECRUIT</span><span className={styles.ja}>採用情報</span></h2>
+            <p className={styles.txt_box}>
+              <span className={styles.big}>「なにそれ面白そう。」を、一緒につくる。</span>
+            </p>
+            <p className={styles.txt_box}>
+              現在、積極的な採用活動は行っていません。
+              ただ、テンミューの想いや事業に興味を持っていただけた方とのご縁は大切にしたいと考えています。
+              「一緒に挑戦してみたい。」と感じていただけたら、上記お問い合わせフォームよりお気軽にお問い合わせください。
+            </p>
+            <div className={styles.btn}><a href="#contact">お問い合わせする</a></div>
+          </div>
         </div>
       </section>
     </main>

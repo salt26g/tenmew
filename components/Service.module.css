@@ -167,7 +167,7 @@
   font-size: 27px;
   padding: 0.4rem 0 0.4rem 0.8rem;
   border-left: solid 0.4rem #1f592a;
-  margin: 0 0 75px 10%;
+  margin: 0 0 120px 10%;
 }
 .section_sub_ttl .big {
   font-size: 55px;
@@ -218,7 +218,7 @@
 .reasons_ol .reasons_ttl {
   float: left;
   width: 55%;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
 }
 .reasons_ol li .img {
   float: right;
@@ -231,49 +231,20 @@
 }
 .reasons_ol p {
   float: left;
-  width: 55%;
+  width: 45%;
   padding-bottom: 0;
   border-bottom: none;
   margin-bottom: 0;
 }
 .reasons_ol .reasons_ttl .nb {
-  display: block;
-  float: left;
-  width: 15%;
-  position: relative;
+  width: 13%;
 }
 .reasons_ol .reasons_ttl .nb::before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: #67ae3e;
-  top: 0;
-  left: 0;
   font-size: 60px;
-  font-weight: lighter;
-  font-family: "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
-  display: block;
-  margin-top: -3%;
-}
-.reasons_ol li:first-child .reasons_ttl .nb::before {
-  content: "01";
-}
-.reasons_ol li:nth-child(2) .reasons_ttl .nb::before {
-  content: "02";
-}
-.reasons_ol li:nth-child(3) .reasons_ttl .nb::before {
-  content: "03";
 }
 .reasons_ol .reasons_ttl .txt {
-  display: block;
-  float: right;
-  width: 85%;
-  font-weight: bold;
-  color: #1f592a;
+  width: 87%;
   font-size: 30px;
-  padding-left: 3%;
-  margin-left: 3%;
-  border-left: solid 1.5px #a5a5a5;
 }
 
 }

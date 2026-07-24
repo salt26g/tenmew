@@ -10,6 +10,11 @@
   width: 100%;
   margin-bottom: 2rem;
 }
+.form_group .required_mark {
+  font-size: 18px;
+  margin: 0;
+  color: #67ae3e;
+}
 .form_group .radio_item {
   font-size: 14px;
   height: 2rem;
@@ -23,7 +28,7 @@
 .form_group .radio_item input {
   width: auto;
   margin-right: 0.5rem;
-  transform: scale(1);
+  transform: scale(0.8);
   accent-color: #1f592a;
 }
 .form_group .message_box {
@@ -38,7 +43,7 @@
   width: auto;
   margin: 0 0.5rem 0 0;
   accent-color: #1f592a;
-  transform: scale(1);
+  transform: scale(0.8);
 }
 .form_group label.privacy_policy {
   display: block;
@@ -58,10 +63,6 @@
   color: #67ae3e;
   text-decoration: underline;
 }
-.form_group label.privacy_policy a {
-  color: #67ae3e;
-  text-decoration: underline;
-}
 .form_group .error_txt {
   color: red;
   font-size: 14px;
@@ -69,4 +70,29 @@
 }
 .form_group.checkbox_group .error_txt {
   text-align: center;
+}
+/* ------ タブレット・PC ------ */
+@media (min-width: 500px) {
+.form_group .radio_item {
+  font-size: 16px;
+  cursor: pointer;
+}
+.form_group .radio_item:hover {
+  opacity: 0.7;
+}
+.form_group .radio_item input {
+  margin: 0 1rem;
+  transform: scale(1.5);
+  accent-color: #1f592a;
+  cursor: pointer;
+}
+.form_group .privacy_check {
+  transform: scale(1.5);
+}
+.form_group label.privacy_policy a {
+  margin-left: 0.5rem;
+}
+.form_group label.privacy_policy a:hover {
+  color: #1f592a;
+}
 }
