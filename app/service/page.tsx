@@ -53,7 +53,8 @@ export default async function Home() {
         en="SERVICE"
         ja="サービス"
         lead={"「なにそれ面白そう。」を行動につなげる、\nテンミューのサービスをご紹介します。"}
-        image="/img/service/service_img01.webp"
+        image_pc="/img/service/pc_hero_img01.webp"
+        image_sp="/img/service/sp_hero_img01.webp"
         alt="サービス"
         links={[
           {
@@ -84,7 +85,7 @@ export default async function Home() {
           </p>
         </div>
         <div className={styles.img}>
-          <Image src="/img/service/service_img02.webp" alt="キャリア支援" fill style={{ objectFit: "contain" }} />
+          <img src="/img/service/img01.webp" alt="キャリア支援" loading="lazy"/>
         </div>
       </section>
       <section id="reasons" className={styles.inner}>
@@ -96,7 +97,7 @@ export default async function Home() {
               <span className={styles.txt}>コーチングで、<br />まだ見えていない可能性を引き出す</span>
             </h3>
             <div className={styles.img}>
-              <Image src="/img/service/service_img03.webp" alt="コーチング" fill style={{ objectFit: "contain" }} />
+              <img src="/img/service/img02.webp" alt="コーチング" loading="lazy"/>
             </div>
             <p>
               約10年間、キャリア面談を重ねて培ったコーチング力を活かし、あなた自身もまだ気づいていない強みや可能性を引き出します。<br />
@@ -109,7 +110,7 @@ export default async function Home() {
               <span className={styles.txt}>約2万社の企業理解を活かした<br />サポート</span>
             </h3>
             <div className={styles.img}>
-              <Image src="/img/service/service_img04.webp" alt="「事業内容への理解」「企業理念への共感」「仕事内容で強みを発揮できるか」" fill style={{ objectFit: "contain" }} />
+              <img src="/img/service/img03.webp" alt="サポート" loading="lazy"/>
             </div>
             <p>
               これまで約2万社の企業と関わってきた経験をもとに、「事業内容への理解」「企業理念への共感」「仕事内容で強みを発揮できるか」の3つを大切にしたキャリア支援を行っています。<br />
@@ -122,7 +123,7 @@ export default async function Home() {
               <span className={styles.txt}>仕事だけではなく<br />人生を見据えたキャリア相談</span>
             </h3>
             <div className={styles.img}>
-              <Image src="/img/service/service_img05.webp" alt="人生を見据えたキャリア相談" fill style={{ objectFit: "contain" }} />
+              <img src="/img/service/img04.webp" alt="キャリア相談" loading="lazy"/>
             </div>
             <p>
               キャリアは、仕事だけで決まるものではありません。<br />

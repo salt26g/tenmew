@@ -48,8 +48,8 @@ export default function AboutPage() {
         en="ABOUT"
         ja="私たちについて"
         lead={"テンミューが目指す社会やミッション、\n会社概要をご紹介します。"}
-        image_pc="/img/about/pc_about_img01.webp"
-        image_sp="/img/about/about_img01.webp"
+        image_pc="/img/about/pc_hero_img01.webp"
+        image_sp="/img/about/sp_hero_img01.webp"
         alt="私たちについて"
         links={[
           {
@@ -121,7 +121,14 @@ export default function AboutPage() {
       </section>
       <section id="mission" className={styles.mission}>
         <div className={styles.img}>
-          <Image src="/img/about/about_img02.webp" alt="ミッション" fill style={{ objectFit: "contain" }} />
+          <picture>
+            <source media="(min-width: 500px)" srcSet="/img/about/pc_img01.webp" />
+            <img
+              src="/img/about/sp_img01.webp"
+              alt="ミッション"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div className={`${styles.tra_box}`}>
           <h2 className={styles.section_ttl}><span className={styles.en}>MISSION</span><span className={styles.ja}>ミッション</span></h2>

@@ -1,5 +1,5 @@
 .contact {
-  background-image: url("/img/basic/top_bg01.webp");
+  background-image: url("/img/basic/sp_bg01.webp");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -62,7 +62,7 @@
 /* ------ タブレット・PC ------ */
 @media (min-width: 500px) {
 .contact {
-  background-image: url("/img/basic/pc_top_bg01.webp");
+  background-image: url("/img/basic/pc_bg01.webp");
   background-size: 100% 100%;
   padding: 30px 15%;
   overflow: hidden;

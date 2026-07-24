@@ -52,7 +52,8 @@ export default async function Home() {
         en="CONTACT・RECRUIT"
         ja="お問い合わせ・採用情報"
         lead={"サービスや採用に関するご質問やご相談など、\nお気軽にお問い合わせください。"}
-        image="/img/contact/contact_img01.webp"
+        image_pc="/img/contact/pc_hero_img01.webp"
+        image_sp="/img/contact/sp_hero_img01.webp"
         alt="お問い合わせ・採用情報"
         links={[
           {

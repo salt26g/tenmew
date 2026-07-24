@@ -54,14 +54,14 @@ export default async function Home() {
         <div className={styles.lead_txt}>
           <p>一人ひとりの可能性を、より良い未来へ。<br />私たちはその一歩に寄り添い、挑戦を後押しします。</p>
         </div>
-        <h1><div><Image src="/img/basic/hero_img01.webp" alt="株式会社テンミュー" fill style={{ objectFit: "contain" }} /></div></h1>
+        <h1><div><Image src="/img/top/hero_img01.webp" alt="株式会社テンミュー" fill style={{ objectFit: "contain" }} /></div></h1>
       </section>
       <section className={styles.about}>
         <div className={styles.img}>
           <picture>
-              <source media="(min-width: 500px)" srcSet="/img/top/pc_top_img01.webp" />
+              <source media="(min-width: 500px)" srcSet="/img/top/pc_img01.webp" />
               <img
-                src="/img/top/top_img01.webp"
+                src="/img/top/sp_img01.webp"
                 alt="私たちについて"
                 loading="lazy"
               />
@@ -78,11 +78,10 @@ export default async function Home() {
       <section className={styles.service}>
         <div className={styles.img}>
           <img
-                src="/img/top/top_img02.webp"
+                src="/img/top/img02.webp"
                 alt="サービス"
                 loading="lazy"
               />
-          {/*<Image src="/img/top/top_img02.webp" alt="サービス" fill style={{ objectFit: "contain" }} />*/}
         </div>
         <div className={styles.txtBox}>
           <h2><span className={styles.en}>SERVICE</span><span className={styles.ja}>サービス</span></h2>
